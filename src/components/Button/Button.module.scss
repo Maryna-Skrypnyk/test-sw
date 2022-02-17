@@ -1,0 +1,85 @@
+@import '../../stylesheet/index.scss';
+
+.Button {
+  display: block;
+  padding: 13px;
+  width: 120px;
+  height: 43px;
+  background-color: $accent-color;
+  color: $primary-white-color;
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  //   box-shadow: 0px 6px 15px rgba(36, 204, 167, 0.5);
+  //   transform: scale(1);
+  //   transition-property: transform;
+  //   transition-duration: $primary-duration;
+  //   transition-timing-function: $timing-function;
+
+  //   &:hover,
+  //   &:focus {
+  //     transform: scale(1.03);
+  //   }
+
+  @media screen and (min-width: 768px) {
+    padding: 13px 26px;
+    width: 140px;
+  }
+}
+
+.Button:disabled {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  color: $button-background-checked;
+}
+
+// .ButtonSecondary {
+//   font-family: $main-font;
+//   padding: 13px;
+//   width: 120px;
+//   height: 43px;
+//   background-color: #ffffff;
+//   border: 1px solid $primary-text-color;
+//   color: $primary-text-color;
+//   font-weight: 600;
+//   font-size: 14px;
+//   text-transform: uppercase;
+//   line-height: 1.2;
+//   text-align: center;
+//   //   text-decoration: none;
+//   cursor: pointer;
+//   // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   // transition-property: box-shadow color background-color;
+//   //   transition-property: color border-color;
+//   //   transition-duration: $primary-duration;
+//   //   transition-timing-function: $timing-function;
+
+//   //   &:hover,
+//   //   &:focus {
+//   //     color: $accent-color;
+//   //     border-color: $accent-color;
+//   //   }
+
+//   @media screen and (min-width: $tablet) {
+//     padding: 13px 26px;
+//     width: 140px;
+//   }
+// }
+
+.ButtonSecondary {
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  height: 43px;
+  border: none;
+  background-color: $primary-white-color;
+
+  @media screen and (min-width: $tablet) {
+    // padding: 13px 26px;
+    width: 140px;
+  }
+}

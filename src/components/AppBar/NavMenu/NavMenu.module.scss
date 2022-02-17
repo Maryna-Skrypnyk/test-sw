@@ -1,0 +1,68 @@
+@import '../../../stylesheet/index.scss';
+
+.containerNav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navigation {
+  //   margin-right: 50px;
+
+  @media screen and (min-width: 768px) {
+    // margin-right: 384px;
+    // margin-right: auto;
+    // margin-left: auto;
+  }
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  //   justify-content: flex-start;
+}
+
+.navLink {
+  display: inline-block;
+  margin: 0;
+  padding: 30px 5px;
+  text-decoration: none;
+  color: $primary-text-color;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  border-bottom-color: transparent;
+  transition-property: color border-bottom-color;
+  transition-duration: $primary-duration;
+  transition-timing-function: $timing-function;
+
+  &:focus {
+    color: $accent-color;
+    border-bottom: 2px solid $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 30px 16px;
+  }
+}
+
+.navLinkActive {
+  composes: navLink;
+  color: $accent-color;
+  border-bottom: 2px solid $accent-color;
+}
+
+.containerLogo {
+  margin-left: 12px;
+  width: 41px;
+  height: 41px;
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

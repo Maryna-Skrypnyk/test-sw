@@ -1,0 +1,40 @@
+@import '../../../../stylesheet/index.scss';
+
+.currency {
+  margin-right: 10px;
+  width: 32px;
+  height: 29px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 22px;
+    // width: 32px;
+    // height: 29px;
+  }
+}
+
+.iconChevron {
+  position: absolute;
+  top: 24px;
+  right: 42px;
+  // width: 6px;
+  // height: 3px;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.currency::after {
+  content: '';
+  position: absolute;
+  top: 43px;
+  right: 36px;
+  width: 12px;
+  height: 4px;
+  color: $primary-white-color;
+  background: currentColor;
+  // background: $primary-white-color;
+
+  @media screen and (min-width: $tablet) {
+    right: 40px;
+    width: 18px;
+  }
+}

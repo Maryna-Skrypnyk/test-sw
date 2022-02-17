@@ -1,0 +1,39 @@
+@import '../../stylesheet/index.scss';
+
+.Overlay {
+  // background-color: white;
+  background-color: $background-color-overlay;
+  position: fixed;
+  top: 81px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Modal {
+  padding: 8px 16px 20px;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%);
+  width: 280px;
+  height: 540px;
+  //   border-radius: 0;
+  background-color: $primary-white-color;
+
+  @media screen and (min-width: $tablet) {
+    top: 0;
+    right: 30px;
+    transform: translate(0, 0);
+    width: 325px;
+    height: 540px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 0;
+    right: 100px;
+    width: 325px;
+    height: 540px;
+  }
+}
